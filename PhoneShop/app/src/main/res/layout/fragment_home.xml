@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment"
+    android:background="#F2F2F2">
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+        </androidx.viewpager.widget.ViewPager>
+        <RelativeLayout
+            android:id="@+id/relativeSPHot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textViewSPHot"
+            android:text="Sản Phẩm Hot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:textColor="@color/black"
+            android:padding="5dp">
+        </TextView>
+            <TextView
+                android:id="@+id/textViewXemThem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xem thêm"
+                android:textSize="16dp"
+                android:textColor="#0101DF"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+            </TextView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewHot"
+                android:background="#F2F2F2"
+                android:layout_below="@+id/textViewSPHot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            </androidx.recyclerview.widget.RecyclerView>
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sản Phẩm Mới Nhất"
+                android:textColor="#FF0000"
+                android:textSize="24dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp">
+            </TextView>
+
+                <TextView
+                    android:id="@+id/textViewXemThem2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="112dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="5dp"
+                    android:text="xem thêm"
+                    android:textColor="#0101DF"
+                    android:textSize="16dp"></TextView>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewNew"
+                android:background="#F2F2F2"
+                android:layout_width="match_parent"
+                android:layout_height="830dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:numColumns="2"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>

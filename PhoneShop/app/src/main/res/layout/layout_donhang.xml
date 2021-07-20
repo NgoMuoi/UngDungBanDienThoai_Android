@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@color/white"
+    android:layout_margin="3dp"
+    android:weightSum="10"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+        <TextView
+            android:adjustViewBounds="true"
+            android:id="@+id/txtMaDH"
+            android:text="Mã DH"
+            android:textSize="20dp"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <TextView
+            android:adjustViewBounds="true"
+            android:id="@+id/txtTinhTrang"
+            android:text="Đã giao"
+            android:textColor="#0000FF"
+            android:textStyle="bold"
+            android:gravity="bottom|center"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:layout_weight="7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtNguoiNhan"
+            android:textColor="@color/black"
+            android:text="Ngô Văn Mười"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"/>
+        <TextView
+            android:id="@+id/txtSDT"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:text="ĐT: 0392419643"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/txtDiaChi"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:text="ĐC: 123 Nguyễn Hữu Tiến, Tây Thạnh, Tân Phú, TP.HCM"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtNgayDat"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:text="09/07/2021"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/txtNgayGiao"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:textSize="18dp"
+                android:text="12/07/2021"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

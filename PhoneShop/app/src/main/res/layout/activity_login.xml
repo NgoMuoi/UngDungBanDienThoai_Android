@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightwhite"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    tools:context=".activity.LoginActivity">
+
+    <TextView
+        android:id="@+id/welcome_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chào mừng đến với"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/mnmobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome_to"
+        android:text="MN MOBILE"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_face_black_24dp"
+        />
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/mnmobile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/text"
+        android:drawableLeft="@drawable/ic_baseline_account_box_24"
+        android:elevation="5dp"
+        android:hint="Tài khoản"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:drawablePadding="5dp"
+        android:textAllCaps="false" />
+    <EditText
+        android:id="@+id/passWord"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:elevation="5dp"
+        android:inputType="numberPassword"
+        android:hint="Mật khẩu"
+        android:background="@drawable/text"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="20dp"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_baseline_vpn_key_24" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:text="Đăng Nhập"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:background="@drawable/button"/>
+
+    <TextView
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bạn chưa có tài khoản! Đăng ký?"
+        android:textColor="@color/fullwhite"
+        android:layout_marginTop="25dp"/>
+
+
+
+</LinearLayout>
